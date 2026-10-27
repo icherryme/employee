@@ -37,6 +37,7 @@ jobs:
           SPRING_DATASOURCE_USERNAME: ${{ secrets.DB_USERNAME }}
           SPRING_DATASOURCE_PASSWORD: ${{ secrets.DB_PASSWORD }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: https://sonarcloud.io
         run: |
           mvn clean verify sonar:sonar \
           -Dspring.datasource.url="${{ secrets.DB_URL }}" \
