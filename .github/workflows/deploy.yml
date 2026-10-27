@@ -42,4 +42,7 @@ jobs:
           -Dspring.datasource.url="${{ secrets.DB_URL }}" \
           -Dspring.datasource.username="${{ secrets.DB_USERNAME }}" \
           -Dspring.datasource.password="${{ secrets.DB_PASSWORD }}" \
-          -Dsonar.token="${{ secrets.SONAR_TOKEN }}"
+          -Dsonar.token="${{ secrets.SONAR_TOKEN }}" \
+          -Dsonar.host.url=https://sonarcloud.io \
+          -Dsonar.organization=icherryme \
+          -Dsonar.projectKey=icherryme_employee

@@ -32,7 +32,7 @@
         <sonar.organization>icherryme</sonar.organization> <!-- Your GitHub username -->
         <sonar.projectKey>icherryme_employee</sonar.projectKey>
     </properties>
-    
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
